@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+npm-debug.log
+
+# IntelliJ / WebStorm
+*.iml
+*.ipr
+*.iws
+.idea
+
+# temporary moved in local lib
+stomp-broker-js
