@@ -7,6 +7,3 @@ npm-debug.log
 *.ipr
 *.iws
 .idea
-
-# temporary moved in local lib
-stomp-broker-js
