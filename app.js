@@ -6,7 +6,16 @@ const http = require('http')
 const StompServer = require('stomp-broker-js')
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://mongo:27017')
+// Using `mongoose.connect`...
+var promise = mongoose.connect('mongodb://mongo:27017', {
+  useMongoClient: true,
+  /* other options */
+});
+promise.then(function(db) {
+  /* Use `db`, for instance `db.model()`
+});
+// Or, if you already have a connection
+connection.openUri('mongodb://localhost/myapp', { /* options */ });
 
 app.get('/', function(req, res){
   res.send('Express server says hello\n')

@@ -13,6 +13,6 @@
     "express": "^4.15.4",
     "mongoose": "^4.11.9",
     "nodemon": "^1.12.0",
-    "stomp-broker-js": "1.1.0"
+    "stomp-broker-js": "git+https://github.com/rpoitras/StompBrokerJS.git#missing-frame-functions"
   }
 }
